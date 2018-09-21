@@ -1,0 +1,28 @@
+AllCops:
+  TargetRubyVersion: 2.5
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/MutableConstant:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 15
+  Exclude:
+    - geo_distance.rb
+
+Metrics/MethodLength:
+  Max: 10
+  Exclude:
+    - geo_distance.rb
+
+Metrics/LineLength:
+  Max: 80
+  Exclude:
+    - geo_distance.rb
+    - 'spec/**/*.rb'
+
+Metrics/BlockLength:
+  Exclude:
+   - 'spec/**/*.rb'
